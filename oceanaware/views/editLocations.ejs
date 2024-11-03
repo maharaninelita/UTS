@@ -1,0 +1,8 @@
+<h2>Edit Location</h2>
+<form action="/editLocation/<%= location.id %>" method="POST">
+    <div class="form-group">
+        <label for="address">Address:</label>
+        <input type="text" class="form-control" id="address" name="address" value="<%= location.address %>" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Update Location</button>
+</form>

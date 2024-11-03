@@ -1,0 +1,8 @@
+<h2>Edit Event Date</h2>
+<form action="/editEventDate/<%= eventDate.id %>" method="POST">
+    <div class="form-group">
+        <label for="date">Date:</label>
+        <input type="date" class="form-control" id="date" name="date" value="<%= eventDate.date.toISOString().split('T')[0] %>" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Update Date</button>
+</form>
